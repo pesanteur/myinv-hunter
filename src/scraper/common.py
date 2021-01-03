@@ -135,6 +135,6 @@ class ScraperFactory:
     @classmethod
     def register(cls, scraper_type):
         domain = scraper_type.get_domain()
-        loggin.debug(f'registering custom scraper for domain: {domain}')
+        logging.debug(f'registering custom scraper for domain: {domain}')
         cls.registry[domain] = scraper_type
         return scraper_type
