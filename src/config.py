@@ -19,7 +19,7 @@ class URL:
         self.url
 
 
-class COnfig:
+class Config:
     def __init__(self, refresh_interval, max_price, urls):
         self.refresh_interval = float(refresh_interval)
         self.max_price = max_price
